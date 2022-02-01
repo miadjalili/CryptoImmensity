@@ -7,25 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231C5817D239E9665CC83DB1 /* libPods-CryptoImmensity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF55D7A805D895CD335149C /* libPods-CryptoImmensity.a */; };
 		8C4950682763A5EB00FDA4AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4950672763A5EB00FDA4AC /* AppDelegate.swift */; };
 		8C49506A2763A5EB00FDA4AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4950692763A5EB00FDA4AC /* SceneDelegate.swift */; };
-		8C49506C2763A5EB00FDA4AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C49506B2763A5EB00FDA4AC /* ViewController.swift */; };
+		8C49506C2763A5EB00FDA4AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C49506B2763A5EB00FDA4AC /* HomeViewController.swift */; };
 		8C49506F2763A5EB00FDA4AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C49506D2763A5EB00FDA4AC /* Main.storyboard */; };
 		8C4950722763A5EB00FDA4AC /* CryptoImmensity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8C4950702763A5EB00FDA4AC /* CryptoImmensity.xcdatamodeld */; };
 		8C4950742763A5ED00FDA4AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4950732763A5ED00FDA4AC /* Assets.xcassets */; };
 		8C4950772763A5ED00FDA4AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4950752763A5ED00FDA4AC /* LaunchScreen.storyboard */; };
+		8C4950832763B95F00FDA4AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C49507F2763B95F00FDA4AC /* Constants.swift */; };
+		8C4950842763B95F00FDA4AC /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4950802763B95F00FDA4AC /* APIConfiguration.swift */; };
+		8C4950852763B95F00FDA4AC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4950812763B95F00FDA4AC /* APIClient.swift */; };
+		8C4950862763B95F00FDA4AC /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4950822763B95F00FDA4AC /* APIRouter.swift */; };
+		8CA6477527776D360085A5C8 /* TableViewCellHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA6477327776D360085A5C8 /* TableViewCellHome.swift */; };
+		8CA6477627776D360085A5C8 /* TableViewCellHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6477427776D360085A5C8 /* TableViewCellHome.xib */; };
+		8CABF8EA2775C6660026CBC5 /* ModelTickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABF8E42775C6660026CBC5 /* ModelTickers.swift */; };
+		8CABF8EB2775C6660026CBC5 /* ModelNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABF8E52775C6660026CBC5 /* ModelNews.swift */; };
+		8CABF8EC2775C6660026CBC5 /* ModelExchanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABF8E62775C6660026CBC5 /* ModelExchanges.swift */; };
+		8CABF8ED2775C6660026CBC5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABF8E72775C6660026CBC5 /* Models.swift */; };
+		8CABF8EE2775C6660026CBC5 /* ModelMarkets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABF8E82775C6660026CBC5 /* ModelMarkets.swift */; };
+		8CABF8EF2775C6660026CBC5 /* ModelFiats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CABF8E92775C6660026CBC5 /* ModelFiats.swift */; };
+		8CAF76A22793380900F1DA2E /* TableViewCellHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAF76A12793380800F1DA2E /* TableViewCellHomeViewModel.swift */; };
+		8CD4375727A9CBD400FE751B /* FiatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375627A9CBD400FE751B /* FiatsViewController.swift */; };
+		8CD4375B27A9CC4A00FE751B /* TableViewCellFiats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375927A9CC4A00FE751B /* TableViewCellFiats.swift */; };
+		8CD4375C27A9CC4A00FE751B /* TableViewCellFiats.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4375A27A9CC4A00FE751B /* TableViewCellFiats.xib */; };
+		8CD4375E27A9E06C00FE751B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375D27A9E06C00FE751B /* NewsViewController.swift */; };
+		8CD4376127A9E09400FE751B /* TableViewCellNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */; };
+		8CD4376227A9E09400FE751B /* TableViewCellNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4376027A9E09400FE751B /* TableViewCellNews.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01A18E3731C397333D6AC278 /* Pods-CryptoImmensity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoImmensity.release.xcconfig"; path = "Target Support Files/Pods-CryptoImmensity/Pods-CryptoImmensity.release.xcconfig"; sourceTree = "<group>"; };
+		153F516CE5BC1D73B03F5E36 /* Pods-CryptoImmensity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoImmensity.debug.xcconfig"; path = "Target Support Files/Pods-CryptoImmensity/Pods-CryptoImmensity.debug.xcconfig"; sourceTree = "<group>"; };
+		1BF55D7A805D895CD335149C /* libPods-CryptoImmensity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CryptoImmensity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4950642763A5EB00FDA4AC /* CryptoImmensity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoImmensity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4950672763A5EB00FDA4AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4950692763A5EB00FDA4AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8C49506B2763A5EB00FDA4AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C49506B2763A5EB00FDA4AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8C49506E2763A5EB00FDA4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8C4950712763A5EB00FDA4AC /* CryptoImmensity.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptoImmensity.xcdatamodel; sourceTree = "<group>"; };
 		8C4950732763A5ED00FDA4AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C4950762763A5ED00FDA4AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C4950782763A5ED00FDA4AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C49507F2763B95F00FDA4AC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C4950802763B95F00FDA4AC /* APIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		8C4950812763B95F00FDA4AC /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		8C4950822763B95F00FDA4AC /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		8CA6477327776D360085A5C8 /* TableViewCellHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellHome.swift; sourceTree = "<group>"; };
+		8CA6477427776D360085A5C8 /* TableViewCellHome.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellHome.xib; sourceTree = "<group>"; };
+		8CABF8E42775C6660026CBC5 /* ModelTickers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelTickers.swift; sourceTree = "<group>"; };
+		8CABF8E52775C6660026CBC5 /* ModelNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelNews.swift; sourceTree = "<group>"; };
+		8CABF8E62775C6660026CBC5 /* ModelExchanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelExchanges.swift; sourceTree = "<group>"; };
+		8CABF8E72775C6660026CBC5 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8CABF8E82775C6660026CBC5 /* ModelMarkets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMarkets.swift; sourceTree = "<group>"; };
+		8CABF8E92775C6660026CBC5 /* ModelFiats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFiats.swift; sourceTree = "<group>"; };
+		8CAF76A12793380800F1DA2E /* TableViewCellHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellHomeViewModel.swift; sourceTree = "<group>"; };
+		8CD4375627A9CBD400FE751B /* FiatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiatsViewController.swift; sourceTree = "<group>"; };
+		8CD4375927A9CC4A00FE751B /* TableViewCellFiats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellFiats.swift; sourceTree = "<group>"; };
+		8CD4375A27A9CC4A00FE751B /* TableViewCellFiats.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellFiats.xib; sourceTree = "<group>"; };
+		8CD4375D27A9E06C00FE751B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNews.swift; sourceTree = "<group>"; };
+		8CD4376027A9E09400FE751B /* TableViewCellNews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellNews.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +75,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231C5817D239E9665CC83DB1 /* libPods-CryptoImmensity.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B01D9562AF5C9437AF1AF30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BF55D7A805D895CD335149C /* libPods-CryptoImmensity.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C3C3D27FAC0739997CF0955 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				153F516CE5BC1D73B03F5E36 /* Pods-CryptoImmensity.debug.xcconfig */,
+				01A18E3731C397333D6AC278 /* Pods-CryptoImmensity.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8C49505B2763A5EA00FDA4AC = {
 			isa = PBXGroup;
 			children = (
 				8C4950662763A5EB00FDA4AC /* CryptoImmensity */,
 				8C4950652763A5EB00FDA4AC /* Products */,
+				1C3C3D27FAC0739997CF0955 /* Pods */,
+				1B01D9562AF5C9437AF1AF30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +120,12 @@
 		8C4950662763A5EB00FDA4AC /* CryptoImmensity */ = {
 			isa = PBXGroup;
 			children = (
+				8CD4375827A9CC0700FE751B /* CustomCells */,
+				8CD4375527A9CB5400FE751B /* Controller */,
+				8CABF8E32775C6660026CBC5 /* Models */,
+				8C49507E2763B95E00FDA4AC /* APIServices */,
 				8C4950672763A5EB00FDA4AC /* AppDelegate.swift */,
 				8C4950692763A5EB00FDA4AC /* SceneDelegate.swift */,
-				8C49506B2763A5EB00FDA4AC /* ViewController.swift */,
 				8C49506D2763A5EB00FDA4AC /* Main.storyboard */,
 				8C4950732763A5ED00FDA4AC /* Assets.xcassets */,
 				8C4950752763A5ED00FDA4AC /* LaunchScreen.storyboard */,
@@ -70,6 +135,54 @@
 			path = CryptoImmensity;
 			sourceTree = "<group>";
 		};
+		8C49507E2763B95E00FDA4AC /* APIServices */ = {
+			isa = PBXGroup;
+			children = (
+				8C49507F2763B95F00FDA4AC /* Constants.swift */,
+				8C4950802763B95F00FDA4AC /* APIConfiguration.swift */,
+				8C4950812763B95F00FDA4AC /* APIClient.swift */,
+				8C4950822763B95F00FDA4AC /* APIRouter.swift */,
+			);
+			path = APIServices;
+			sourceTree = "<group>";
+		};
+		8CABF8E32775C6660026CBC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8CABF8E42775C6660026CBC5 /* ModelTickers.swift */,
+				8CABF8E52775C6660026CBC5 /* ModelNews.swift */,
+				8CABF8E62775C6660026CBC5 /* ModelExchanges.swift */,
+				8CAF76A12793380800F1DA2E /* TableViewCellHomeViewModel.swift */,
+				8CABF8E72775C6660026CBC5 /* Models.swift */,
+				8CABF8E82775C6660026CBC5 /* ModelMarkets.swift */,
+				8CABF8E92775C6660026CBC5 /* ModelFiats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8CD4375527A9CB5400FE751B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8C49506B2763A5EB00FDA4AC /* HomeViewController.swift */,
+				8CD4375627A9CBD400FE751B /* FiatsViewController.swift */,
+				8CD4375D27A9E06C00FE751B /* NewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8CD4375827A9CC0700FE751B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				8CA6477327776D360085A5C8 /* TableViewCellHome.swift */,
+				8CA6477427776D360085A5C8 /* TableViewCellHome.xib */,
+				8CD4375927A9CC4A00FE751B /* TableViewCellFiats.swift */,
+				8CD4375A27A9CC4A00FE751B /* TableViewCellFiats.xib */,
+				8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */,
+				8CD4376027A9E09400FE751B /* TableViewCellNews.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +190,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C49507B2763A5ED00FDA4AC /* Build configuration list for PBXNativeTarget "CryptoImmensity" */;
 			buildPhases = (
+				68CEA49C33CB09E77A43459D /* [CP] Check Pods Manifest.lock */,
 				8C4950602763A5EB00FDA4AC /* Sources */,
 				8C4950612763A5EB00FDA4AC /* Frameworks */,
 				8C4950622763A5EB00FDA4AC /* Resources */,
@@ -128,22 +242,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD4375C27A9CC4A00FE751B /* TableViewCellFiats.xib in Resources */,
 				8C4950772763A5ED00FDA4AC /* LaunchScreen.storyboard in Resources */,
 				8C4950742763A5ED00FDA4AC /* Assets.xcassets in Resources */,
+				8CA6477627776D360085A5C8 /* TableViewCellHome.xib in Resources */,
+				8CD4376227A9E09400FE751B /* TableViewCellNews.xib in Resources */,
 				8C49506F2763A5EB00FDA4AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		68CEA49C33CB09E77A43459D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoImmensity-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8C4950602763A5EB00FDA4AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4950832763B95F00FDA4AC /* Constants.swift in Sources */,
+				8CD4375B27A9CC4A00FE751B /* TableViewCellFiats.swift in Sources */,
+				8CD4376127A9E09400FE751B /* TableViewCellNews.swift in Sources */,
+				8C4950852763B95F00FDA4AC /* APIClient.swift in Sources */,
+				8CABF8EE2775C6660026CBC5 /* ModelMarkets.swift in Sources */,
+				8C4950842763B95F00FDA4AC /* APIConfiguration.swift in Sources */,
+				8CABF8ED2775C6660026CBC5 /* Models.swift in Sources */,
 				8C4950722763A5EB00FDA4AC /* CryptoImmensity.xcdatamodeld in Sources */,
-				8C49506C2763A5EB00FDA4AC /* ViewController.swift in Sources */,
+				8CD4375E27A9E06C00FE751B /* NewsViewController.swift in Sources */,
+				8CAF76A22793380900F1DA2E /* TableViewCellHomeViewModel.swift in Sources */,
+				8CABF8EB2775C6660026CBC5 /* ModelNews.swift in Sources */,
+				8CABF8EC2775C6660026CBC5 /* ModelExchanges.swift in Sources */,
+				8C49506C2763A5EB00FDA4AC /* HomeViewController.swift in Sources */,
+				8CABF8EA2775C6660026CBC5 /* ModelTickers.swift in Sources */,
+				8C4950862763B95F00FDA4AC /* APIRouter.swift in Sources */,
+				8CABF8EF2775C6660026CBC5 /* ModelFiats.swift in Sources */,
 				8C4950682763A5EB00FDA4AC /* AppDelegate.swift in Sources */,
+				8CA6477527776D360085A5C8 /* TableViewCellHome.swift in Sources */,
+				8CD4375727A9CBD400FE751B /* FiatsViewController.swift in Sources */,
 				8C49506A2763A5EB00FDA4AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +446,7 @@
 		};
 		8C49507C2763A5ED00FDA4AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 153F516CE5BC1D73B03F5E36 /* Pods-CryptoImmensity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +458,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +476,7 @@
 		};
 		8C49507D2763A5ED00FDA4AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A18E3731C397333D6AC278 /* Pods-CryptoImmensity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +488,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
