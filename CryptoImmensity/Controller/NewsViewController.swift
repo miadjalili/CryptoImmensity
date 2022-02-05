@@ -28,7 +28,10 @@ class NewsViewController: UIViewController {
             switch result{
             case .success(let News):
                 self.newsModel = News.news
-                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+               
             case .failure(let error):
                 print(error)
             }
@@ -48,7 +51,9 @@ extension NewsViewController : UITableViewDelegate,UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellNews.identifier, for: indexPath) as? TableViewCellNews else {
             return UITableViewCell()
         }
-        let fileUrl = URL(string: modelNews.imgURL)!
+        guard let fileUrl = URL(string: modelNews.imgURL) else {
+            return cell
+        }
          Nuke.loadImage(with: fileUrl , into: cell.imageNews)
         cell.titleLabel.text = modelNews.title
         return cell

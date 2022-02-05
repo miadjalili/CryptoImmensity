@@ -10,7 +10,7 @@ import Alamofire
 
 enum APIRouter: URLRequestConvertible {
     
-    case Coins(currency: String)
+    case Coins(currency: String,limit : String)
     case Exchanges
     case markets(coinId: String)
     case Tickers(exchange:String ,pair: String)
@@ -46,8 +46,8 @@ enum APIRouter: URLRequestConvertible {
     // MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-        case .Coins(let currency):
-            return [API.APIParameterKey.currency: currency]
+        case .Coins(let currency,let limit):
+            return [API.APIParameterKey.currency: currency,API.APIParameterKey.limit: limit]
         case .markets(let coinID):
             return [API.APIParameterKey.coinId: coinID]
         case .Tickers(let exchange,let pair):

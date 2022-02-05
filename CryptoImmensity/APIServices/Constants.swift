@@ -15,6 +15,7 @@ struct API {
     
     struct APIParameterKey {
         static let currency = "currency"
+        static let limit = "limit"
         static let coinId = "coinId"
         static let exchange = "exchange"
         static let pair = "pair"

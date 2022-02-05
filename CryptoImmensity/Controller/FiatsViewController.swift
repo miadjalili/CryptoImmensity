@@ -34,7 +34,9 @@ class FiatsViewController: UIViewController {
             switch result{
             case .success(let Fiats):
                 self.fiatsModel = Fiats
-                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             case .failure(let error):
             print(error)
             }

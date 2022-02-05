@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="15.942028985507248" y="1849.5535714285713"/>
         </scene>
-        <!--345,543$-->
+        <!--YourBalance-->
         <scene sceneID="vFX-Kz-OW3">
             <objects>
-                <viewController id="seP-CR-d0u" sceneMemberID="viewController">
+                <viewController id="seP-CR-d0u" customClass="PortfolioViewController" customModule="CryptoImmensity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g8d-QM-zPQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -163,9 +163,12 @@
                             <constraint firstItem="rsw-oT-igM" firstAttribute="bottom" secondItem="hqG-WV-Y4V" secondAttribute="bottom" id="pgd-BK-DEu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="345,543$" id="isa-iX-LvK">
+                    <navigationItem key="navigationItem" title="YourBalance" id="isa-iX-LvK">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="zHF-7x-u0b"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="hqG-WV-Y4V" id="dDJ-Il-pOF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpB-v0-Emf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,7 +269,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UB8-4C-Y0b">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.26304140686988831" green="0.91494262218475342" blue="0.81436878442764282" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -277,17 +279,76 @@
             </objects>
             <point key="canvasLocation" x="3487" y="1004"/>
         </scene>
-        <!--View Controller-->
+        <!--Convert-->
         <scene sceneID="vG4-nR-ZL5">
             <objects>
-                <viewController id="no6-jk-aof" sceneMemberID="viewController">
+                <viewController title="Convert" id="no6-jk-aof" customClass="ConvertViewController" customModule="CryptoImmensity" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cFX-ah-69R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnO-eP-D3e">
+                                <rect key="frame" x="20" y="88" width="374" height="704"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q9U-FT-VKa">
+                                        <rect key="frame" x="22" y="29" width="324" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="if market x to market y">
+                                            <backgroundConfiguration key="background" cornerRadius="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H6-8H-5hr">
+                                        <rect key="frame" x="22" y="154" width="324" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Whale Aleart">
+                                            <backgroundConfiguration key="background" cornerRadius="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="74t-c0-Rc4" kind="show" id="Pax-RR-ehf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fm6-J6-pST">
+                                        <rect key="frame" x="25" y="278" width="324" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Crypto Fear &amp; Greed Index">
+                                            <backgroundConfiguration key="background" cornerRadius="17"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="1vy-hd-Q9v" kind="show" id="aKh-4Q-gBC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttf-Qb-l6h">
+                                        <rect key="frame" x="25" y="407" width="324" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="blockchair.com">
+                                            <backgroundConfiguration key="background" cornerRadius="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cz5-M6-30S">
+                                        <rect key="frame" x="25" y="531" width="324" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Login/SingUp to Nobitex">
+                                            <backgroundConfiguration key="background" cornerRadius="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gpE-HI-kxC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FnO-eP-D3e" firstAttribute="leading" secondItem="gpE-HI-kxC" secondAttribute="leading" constant="20" id="EBa-S6-fLe"/>
+                            <constraint firstItem="FnO-eP-D3e" firstAttribute="top" secondItem="gpE-HI-kxC" secondAttribute="top" id="g9i-nf-Hh4"/>
+                            <constraint firstItem="gpE-HI-kxC" firstAttribute="trailing" secondItem="FnO-eP-D3e" secondAttribute="trailing" constant="20" id="haM-Wm-904"/>
+                            <constraint firstItem="gpE-HI-kxC" firstAttribute="bottom" secondItem="FnO-eP-D3e" secondAttribute="bottom" constant="21" id="o4s-rX-YbT"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ech-tp-KdE"/>
+                    <navigationItem key="navigationItem" title="More" id="Ech-tp-KdE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFc-RC-THY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -313,15 +374,18 @@
             </objects>
             <point key="canvasLocation" x="9084" y="1019"/>
         </scene>
-        <!--Convert-->
+        <!--More-->
         <scene sceneID="Cyk-lE-DbG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y7N-jM-vtE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Convert" image="circle.hexagonpath.fill" catalog="system" id="mkx-b1-9dR"/>
+                    <tabBarItem key="tabBarItem" title="More" image="circle.hexagonpath.fill" catalog="system" id="mkx-b1-9dR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c1s-ez-XO1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -331,6 +395,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1hV-aH-bRH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6137.68115942029" y="1016.5178571428571"/>
+        </scene>
+        <!--Whale Alert-->
+        <scene sceneID="ZHk-he-Qit">
+            <objects>
+                <viewController id="74t-c0-Rc4" customClass="WhaleAlertViewController" customModule="CryptoImmensity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="etL-JG-3WA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hJ2-9R-MIV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Whale Alert" id="Yp8-KL-Gi1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c0B-F9-cyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6983" y="1823"/>
+        </scene>
+        <!--Crypto Fear & Greed Index-->
+        <scene sceneID="Jb1-zb-sUY">
+            <objects>
+                <viewController id="1vy-hd-Q9v" customClass="Fear_GreedViewController" customModule="CryptoImmensity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CFL-1f-bLU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6t-JM-gaS">
+                                <rect key="frame" x="20" y="88" width="374" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <wkWebViewConfiguration key="configuration" allowsAirPlayForMediaPlayback="NO" allowsPictureInPictureMediaPlayback="NO">
+                                    <dataDetectorTypes key="dataDetectorTypes"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fa1-iW-Gkg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crypto Fear &amp; Greed Index" id="wUq-iS-ibr"/>
+                    <connections>
+                        <outlet property="webView" destination="t6t-JM-gaS" id="kiZ-yj-xu3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWj-nv-X3z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8110" y="1823"/>
         </scene>
         <!--Choose a Fiat-->
         <scene sceneID="Wi9-GC-eWb">

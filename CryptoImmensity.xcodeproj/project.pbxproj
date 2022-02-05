@@ -34,6 +34,12 @@
 		8CD4375E27A9E06C00FE751B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375D27A9E06C00FE751B /* NewsViewController.swift */; };
 		8CD4376127A9E09400FE751B /* TableViewCellNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */; };
 		8CD4376227A9E09400FE751B /* TableViewCellNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4376027A9E09400FE751B /* TableViewCellNews.xib */; };
+		8CFF9A5827AB15300065A10F /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5727AB15300065A10F /* ConvertViewController.swift */; };
+		8CFF9A5A27AC36B80065A10F /* Fear&GreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5927AC36B80065A10F /* Fear&GreedViewController.swift */; };
+		8CFF9A5C27AC457E0065A10F /* WhaleAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5B27AC457E0065A10F /* WhaleAlertViewController.swift */; };
+		8CFF9A5E27AC53D40065A10F /* PortfolioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5D27AC53D40065A10F /* PortfolioViewController.swift */; };
+		8CFF9A6127AC54950065A10F /* PortfolioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5F27AC54950065A10F /* PortfolioTableViewCell.swift */; };
+		8CFF9A6227AC54950065A10F /* PortfolioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CFF9A6027AC54950065A10F /* PortfolioTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,12 @@
 		8CD4375D27A9E06C00FE751B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNews.swift; sourceTree = "<group>"; };
 		8CD4376027A9E09400FE751B /* TableViewCellNews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellNews.xib; sourceTree = "<group>"; };
+		8CFF9A5727AB15300065A10F /* ConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewController.swift; sourceTree = "<group>"; };
+		8CFF9A5927AC36B80065A10F /* Fear&GreedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fear&GreedViewController.swift"; sourceTree = "<group>"; };
+		8CFF9A5B27AC457E0065A10F /* WhaleAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleAlertViewController.swift; sourceTree = "<group>"; };
+		8CFF9A5D27AC53D40065A10F /* PortfolioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewController.swift; sourceTree = "<group>"; };
+		8CFF9A5F27AC54950065A10F /* PortfolioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioTableViewCell.swift; sourceTree = "<group>"; };
+		8CFF9A6027AC54950065A10F /* PortfolioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortfolioTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +178,10 @@
 				8C49506B2763A5EB00FDA4AC /* HomeViewController.swift */,
 				8CD4375627A9CBD400FE751B /* FiatsViewController.swift */,
 				8CD4375D27A9E06C00FE751B /* NewsViewController.swift */,
+				8CFF9A5727AB15300065A10F /* ConvertViewController.swift */,
+				8CFF9A5927AC36B80065A10F /* Fear&GreedViewController.swift */,
+				8CFF9A5B27AC457E0065A10F /* WhaleAlertViewController.swift */,
+				8CFF9A5D27AC53D40065A10F /* PortfolioViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -179,6 +195,8 @@
 				8CD4375A27A9CC4A00FE751B /* TableViewCellFiats.xib */,
 				8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */,
 				8CD4376027A9E09400FE751B /* TableViewCellNews.xib */,
+				8CFF9A5F27AC54950065A10F /* PortfolioTableViewCell.swift */,
+				8CFF9A6027AC54950065A10F /* PortfolioTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -246,6 +264,7 @@
 				8C4950772763A5ED00FDA4AC /* LaunchScreen.storyboard in Resources */,
 				8C4950742763A5ED00FDA4AC /* Assets.xcassets in Resources */,
 				8CA6477627776D360085A5C8 /* TableViewCellHome.xib in Resources */,
+				8CFF9A6227AC54950065A10F /* PortfolioTableViewCell.xib in Resources */,
 				8CD4376227A9E09400FE751B /* TableViewCellNews.xib in Resources */,
 				8C49506F2763A5EB00FDA4AC /* Main.storyboard in Resources */,
 			);
@@ -283,9 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFF9A6127AC54950065A10F /* PortfolioTableViewCell.swift in Sources */,
 				8C4950832763B95F00FDA4AC /* Constants.swift in Sources */,
 				8CD4375B27A9CC4A00FE751B /* TableViewCellFiats.swift in Sources */,
+				8CFF9A5827AB15300065A10F /* ConvertViewController.swift in Sources */,
 				8CD4376127A9E09400FE751B /* TableViewCellNews.swift in Sources */,
+				8CFF9A5C27AC457E0065A10F /* WhaleAlertViewController.swift in Sources */,
 				8C4950852763B95F00FDA4AC /* APIClient.swift in Sources */,
 				8CABF8EE2775C6660026CBC5 /* ModelMarkets.swift in Sources */,
 				8C4950842763B95F00FDA4AC /* APIConfiguration.swift in Sources */,
@@ -294,6 +316,7 @@
 				8CD4375E27A9E06C00FE751B /* NewsViewController.swift in Sources */,
 				8CAF76A22793380900F1DA2E /* TableViewCellHomeViewModel.swift in Sources */,
 				8CABF8EB2775C6660026CBC5 /* ModelNews.swift in Sources */,
+				8CFF9A5E27AC53D40065A10F /* PortfolioViewController.swift in Sources */,
 				8CABF8EC2775C6660026CBC5 /* ModelExchanges.swift in Sources */,
 				8C49506C2763A5EB00FDA4AC /* HomeViewController.swift in Sources */,
 				8CABF8EA2775C6660026CBC5 /* ModelTickers.swift in Sources */,
@@ -301,6 +324,7 @@
 				8CABF8EF2775C6660026CBC5 /* ModelFiats.swift in Sources */,
 				8C4950682763A5EB00FDA4AC /* AppDelegate.swift in Sources */,
 				8CA6477527776D360085A5C8 /* TableViewCellHome.swift in Sources */,
+				8CFF9A5A27AC36B80065A10F /* Fear&GreedViewController.swift in Sources */,
 				8CD4375727A9CBD400FE751B /* FiatsViewController.swift in Sources */,
 				8C49506A2763A5EB00FDA4AC /* SceneDelegate.swift in Sources */,
 			);

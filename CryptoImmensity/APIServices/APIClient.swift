@@ -23,9 +23,9 @@ class APIClient {
     
     
     ///Get list of coins
-    static func GetCoins(currency: String, completion:@escaping (Result<CoinsModel, AFError>)->Void) {
+    static func GetCoins(currency: String,limit:String, completion:@escaping (Result<CoinsModel, AFError>)->Void) {
         
-        performRequest(route: APIRouter.Coins(currency: currency), completion: completion)
+        performRequest(route: APIRouter.Coins(currency: currency, limit: limit), completion: completion)
        
     }
     
