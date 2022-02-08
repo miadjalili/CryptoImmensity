@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
      
      }
     
-    func fetchData(currency:String = "USD" , limit:String = "1000"){
+    func fetchData(currency:String = "USD" , limit:String = "100"){
         APIClient.GetCoins(currency: currency,limit : limit) { result in
             switch result {
             case .success(let Coins):
@@ -108,11 +108,18 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCellHome.identifier, for: indexPath) as? TableViewCellHome else {
             return UITableViewCell()
         }
+        
         cell.rankLabel.text = "\(modelCoins.rank)"
         cell.coinNameLabel.text  = modelCoins.name
         let fileUrl = URL(string: modelCoins.icon)!
         Nuke.loadImage(with: fileUrl , into: cell.coinImage)
-        cell.priceLabel.text = "\(currency)\(String(format:"%.2f",modelCoins.price as! CVarArg))"
+        if modelCoins.price! >= 1.00 {
+            cell.priceLabel.text = "\(currency)\(String(format:"%.2f",modelCoins.price as! CVarArg))"
+        }else{
+            cell.priceLabel.text = "\(currency)\(String(format:"%.6f",modelCoins.price as! CVarArg))"
+        }
+        
+        
         
         if modelCoins.priceChange1D! > 0{
             UIFont.boldSystemFont(ofSize: cell.priceChange1d.font.pointSize)
@@ -139,6 +146,20 @@ extension HomeViewController : UITableViewDelegate,UITableViewDataSource {
     print("refresh")
             
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+       
+        let data = CoinsModel[indexPath.row]
+       
+        let DetailsCoinViewController = self.storyboard?.instantiateViewController(withIdentifier: DetailsCoinViewController.identifier) as! DetailsCoinViewController
+        DetailsCoinViewController.forwardData = data
+        //   newViewController.currency = currency
+       //   newViewController.coins = coins
+       
+        
+        self.navigationController?.pushViewController(DetailsCoinViewController, animated: true)}
+    
+    
     
 }
 

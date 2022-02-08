@@ -34,6 +34,7 @@
 		8CD4375E27A9E06C00FE751B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375D27A9E06C00FE751B /* NewsViewController.swift */; };
 		8CD4376127A9E09400FE751B /* TableViewCellNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */; };
 		8CD4376227A9E09400FE751B /* TableViewCellNews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4376027A9E09400FE751B /* TableViewCellNews.xib */; };
+		8CE1286C27B2D7AD00509FBC /* DetailsCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE1286B27B2D7AD00509FBC /* DetailsCoinViewController.swift */; };
 		8CFF9A5827AB15300065A10F /* ConvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5727AB15300065A10F /* ConvertViewController.swift */; };
 		8CFF9A5A27AC36B80065A10F /* Fear&GreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5927AC36B80065A10F /* Fear&GreedViewController.swift */; };
 		8CFF9A5C27AC457E0065A10F /* WhaleAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFF9A5B27AC457E0065A10F /* WhaleAlertViewController.swift */; };
@@ -74,6 +75,7 @@
 		8CD4375D27A9E06C00FE751B /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		8CD4375F27A9E09400FE751B /* TableViewCellNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNews.swift; sourceTree = "<group>"; };
 		8CD4376027A9E09400FE751B /* TableViewCellNews.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCellNews.xib; sourceTree = "<group>"; };
+		8CE1286B27B2D7AD00509FBC /* DetailsCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoinViewController.swift; sourceTree = "<group>"; };
 		8CFF9A5727AB15300065A10F /* ConvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertViewController.swift; sourceTree = "<group>"; };
 		8CFF9A5927AC36B80065A10F /* Fear&GreedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fear&GreedViewController.swift"; sourceTree = "<group>"; };
 		8CFF9A5B27AC457E0065A10F /* WhaleAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleAlertViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				8C49506B2763A5EB00FDA4AC /* HomeViewController.swift */,
+				8CE1286B27B2D7AD00509FBC /* DetailsCoinViewController.swift */,
 				8CD4375627A9CBD400FE751B /* FiatsViewController.swift */,
 				8CD4375D27A9E06C00FE751B /* NewsViewController.swift */,
 				8CFF9A5727AB15300065A10F /* ConvertViewController.swift */,
@@ -308,6 +311,7 @@
 				8CFF9A5827AB15300065A10F /* ConvertViewController.swift in Sources */,
 				8CD4376127A9E09400FE751B /* TableViewCellNews.swift in Sources */,
 				8CFF9A5C27AC457E0065A10F /* WhaleAlertViewController.swift in Sources */,
+				8CE1286C27B2D7AD00509FBC /* DetailsCoinViewController.swift in Sources */,
 				8C4950852763B95F00FDA4AC /* APIClient.swift in Sources */,
 				8CABF8EE2775C6660026CBC5 /* ModelMarkets.swift in Sources */,
 				8C4950842763B95F00FDA4AC /* APIConfiguration.swift in Sources */,
